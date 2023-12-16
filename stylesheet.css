@@ -1,0 +1,34 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#477043;
+}
+
+.modeselect {
+    display: contents;
+}
+
+.modeholder {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+}
+
+.modebutton {
+    margin: 10px;
+    border-radius: 12.5px;
+    background-color: #629463;
+    border: none;
+    padding: 10px;
+    font-weight: 100; /*Check with Nat why this isn't working */
+    font-size: 40px;
+    color: #DEFCB9;
+    width: 495px;
+}
