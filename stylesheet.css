@@ -2,7 +2,7 @@ body {
     font-family: "Montserrat", sans-serif;
     justify-content: center;
     align-items: center;
-    background-color:#477043;
+    background-color:#6b6b6b;
 }
 
 .modeselect {
@@ -21,13 +21,13 @@ body {
 .modebutton {
     margin: 10px;
     border-radius: 12.5px;
-    background-color: #629463;
+    background-color: #929292;
     border: none;
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 35px;
-    color: #DEFCB9;
+    color: #ececec;
     width: 495px;
 }
 
@@ -45,8 +45,8 @@ body {
     display: flex;
     justify-content: left;
     align-items: left;
-    border: #629463;
-    color: #DEFCB9;
+    border: #929292;
+    color: #ececec;
     padding: 10px;
     font-size: 25px;
     gap: 10px;
