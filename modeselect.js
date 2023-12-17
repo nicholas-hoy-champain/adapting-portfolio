@@ -60,7 +60,7 @@ const createProjectRow = (proj) => {
 
     const title = document.createElement('p');
     title.innerText = proj.title;
-    title.style.fontWeight = '900';
+    title.style.fontWeight = '600';
     title.style.alignContent = 'center';
     row.append(title);
 
