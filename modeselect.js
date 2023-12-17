@@ -53,11 +53,11 @@ const getSortedProjects = async () => {
 
     var projs = [];
 
-    projs.push(getProject('addagrams'));
-    projs.push(getProject('artemis'));
-    projs.push(getProject('bwr'));
-    projs.push(getProject('the-well'));
-    projs.push(getProject('willard-and-maple'));
+    projs.push(await getProject('addagrams'));
+    projs.push(await getProject('artemis'));
+    projs.push(await getProject('bwr'));
+    projs.push(await getProject('the-well'));
+    projs.push(await getProject('willard-and-maple'));
 
     projs.filter((proj) => proj.modePriorities.has(modeKey));
     projs.sort((a,b) => b.modePriorities.get(modeKey) - a.modePriorities.get(modeKey));
