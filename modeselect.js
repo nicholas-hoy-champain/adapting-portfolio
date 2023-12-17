@@ -30,7 +30,9 @@ const UnravelMode = () => {
 
 
     /*Project files*/
-
+    fetch('./projects/addagrams.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 }
 

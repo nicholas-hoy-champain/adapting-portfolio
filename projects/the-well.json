@@ -1,0 +1,10 @@
+{
+    "modePriorities": {
+        "editing": 1
+    },
+
+    "iconPath" : "the-well-thumbnail.png",
+    "title" : "The Well",
+    "role" : "Layout Designer",
+    "timeframe" : "January 2019–April 2019"
+}

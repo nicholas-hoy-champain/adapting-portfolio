@@ -1,0 +1,11 @@
+{
+    "modePriorities": {
+        "software": 1,
+        "game-dev": 2
+    },
+
+    "iconPath" : "addagrams.jpg",
+    "title" : "Addagrams",
+    "role" : "Programmer (Freelance)",
+    "timeframe" : "March 2023–August 2023"
+}

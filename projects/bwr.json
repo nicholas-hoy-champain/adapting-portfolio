@@ -1,0 +1,10 @@
+{
+    "modePriorities": {
+        "game-dev": 5
+    },
+
+    "iconPath" : "bwr-thumbnail.png",
+    "title" : "Black White Red",
+    "role" : "Product Owner & Systems Programmer",
+    "timeframe" : "June 2022–August 2022"
+}

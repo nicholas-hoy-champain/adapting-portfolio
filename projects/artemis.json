@@ -1,0 +1,12 @@
+{
+    "modePriorities": {
+        "software": 0,
+        "game-dev": 0,
+        "editing": 2
+    },
+
+    "iconPath" : "artemis-thumbnail.png",
+    "title" : "Artemis",
+    "role" : "Creator, Unity Package",
+    "timeframe" : "May 2022–Present"
+}
