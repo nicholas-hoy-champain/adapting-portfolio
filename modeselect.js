@@ -69,7 +69,9 @@ const getSortedProjects = async () => {
 
 const getProject = async (name) => {
     const response = await fetch('./projects/' + name + '.json');
-    return await response.json();
+    const obj = await response.json();
+    console.log(obj);
+    return obj;
 }
 
 const onClickButton = (event) => {
