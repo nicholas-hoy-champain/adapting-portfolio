@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color:#c9c9c9;
-    color: #9a9a9a;
+    color: #898989;
 ;
 }
 
@@ -48,7 +48,7 @@ body {
     justify-content: left;
     align-items: left;
     border: #929292;
-    color: #9a9a9a;
+    color: #c9c9c9;
     padding: 10px;
     font-size: 25px;
     gap: 10px;
