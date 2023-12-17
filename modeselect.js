@@ -4,6 +4,7 @@ const Mode = Object.freeze({
     Game: 1,
     Editor: 2
 })
+const ModeKey = ['software','gamedev','editing']
 
 var currentMode = Mode.Invalid;
 
@@ -38,23 +39,51 @@ const UnravelMode = async () => {
     const board = document.createElement('div');
     board.classList.add('projectsboard');
     projList.forEach((proj) => {
-        const row = document.createElement('div');
-        row.classList.add('projectrow');
-        row.innerText = proj.title + " | " + proj.role + " | " + proj.timeframe;
-        board.append(row);
+        board.append(createProjectRow(proj));
     });
     modeselect.append(board);
 }
 
+const createProjectRow = (proj) => {
+    const row = document.createElement('div');
+    row.classList.add('projectrow');
+
+    const icon = document.createElement('img');
+    icon.setAttribute('src', 'images/' + proj.iconPath);
+    icon.setAttribute('alt', proj.title);
+    icon.style.height = 100;
+    icon.style.width = 100;
+    row.append(icon);
+
+    const title = document.createElement('p');
+    title.innerText = '<b>' + proj.title + '</>'
+    row.append(title);
+
+    const role = document.createElement('p');
+    role.innerText = getFromMode(proj.role);
+    row.append(role);
+
+    const timeframe = document.createElement('p');
+    role.innerText = getFromMode(proj.timeframe);
+    row.append(timeframe);
+
+    return row;
+}
+
+const getFromMode = (value) => {
+    if(typeof value === 'object')
+    {
+        return getFromMode(value[ModeKey[currentMode]]);
+    }
+    else
+    {
+        return value;
+    }
+}
+
 const getSortedProjects = async () => {
     
-    var modeKey;
-    if(currentMode == Mode.Game)
-            modeKey = "gamedev";
-    if(currentMode ==  Mode.Editor)
-            modeKey = "editing";
-    if(currentMode == Mode.Software)
-            modeKey = "software";
+    var modeKey = ModeKey[currentMode];
     console.log(modeKey, currentMode);
 
     var projs = [];

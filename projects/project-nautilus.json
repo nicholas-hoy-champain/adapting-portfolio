@@ -7,6 +7,10 @@
 
     "iconPath" : "proj-n.png",
     "title" : "Project Nautilus",
-    "role" : "Technical & Narrative Director",
+    "role" : {
+        "software": "Technical Director",
+        "gamedev": "Technical & Narrative Director",
+        "editing": "Narrative Director"
+    },
     "timeframe" : "August 2021–May 2022"
 }
