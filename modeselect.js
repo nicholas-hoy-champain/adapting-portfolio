@@ -53,6 +53,8 @@ const getSortedProjects = async () => {
     projs.push(await getProject('the-well'));
     projs.push(await getProject('willard-and-maple'));
 
+    projs.forEach((proj) => console.log(proj.modePriorities.hasOwnProperty(modeKey)));
+
     projs.filter((proj) => proj.modePriorities.hasOwnProperty(modeKey));
     projs.sort((a,b) => b.modePriorities[modeKey] - a.modePriorities[modeKey]);
 
