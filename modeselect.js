@@ -15,6 +15,8 @@ const UnravelMode = async () => {
     const headshot = document.createElement('div');
     headshot.style.display = 'flex';
     headshot.style.gap = '20px';
+    headshot.style.marginLeft = '100px';
+    headshot.style.marginRight = '100px';
 
     const intro = document.createElement('div');
     intro.style.display = 'content';
