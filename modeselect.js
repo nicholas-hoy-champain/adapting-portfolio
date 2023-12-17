@@ -32,10 +32,6 @@ const UnravelMode = async () => {
     /*Project files*/
     const projList = await getSortedProjects();
 
-    fetch('./projects/addagrams.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-
 }
 
 const getSortedProjects = async () => {
@@ -62,6 +58,9 @@ const getSortedProjects = async () => {
     projs.push(getProject('bwr'));
     projs.push(getProject('the-well'));
     projs.push(getProject('willard-and-maple'));
+
+    projs.filter((proj) => proj.modePriorities.has(modeKey));
+    projs.sort((a,b) => b.modePriorities.get(modeKey) - a.modePriorities.get(modeKey));
 
     console.log(projs.length);
 
