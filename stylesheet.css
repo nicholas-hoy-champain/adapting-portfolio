@@ -2,7 +2,8 @@ body {
     font-family: "Montserrat", sans-serif;
     justify-content: center;
     align-items: center;
-    background-color:#6b6b6b;
+    background-color:#c9c9c9;
+    color:#ececec;
 }
 
 .modeselect {
