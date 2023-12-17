@@ -31,7 +31,7 @@ const UnravelMode = async () => {
 
     /*Project files*/
     const projList = await getSortedProjects();
-
+    console.log(projList);
 }
 
 const getSortedProjects = async () => {
@@ -53,7 +53,7 @@ const getSortedProjects = async () => {
     projs.push(await getProject('the-well'));
     projs.push(await getProject('willard-and-maple'));
 
-    projs.filter((proj) => modeKey in proj.modePriorities);
+    projs.filter((proj) => proj.modePriorities.hasOwnProperty(modeKey));
     projs.sort((a,b) => b.modePriorities[modeKey] - a.modePriorities[modeKey]);
 
     console.log(projs.length);
