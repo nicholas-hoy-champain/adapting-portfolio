@@ -41,18 +41,16 @@ body {
 }
 
 .projectrow {
-    width: 100vw;
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: left;
     align-items: left;
     border: #629463;
-    background-color: #477043;
     color: #DEFCB9;
     padding: 10px;
     font-size: 35px;
-    margin-bottom: 10px;
+    gap: 10px;
+    border-top-style: groove;
+    border-bottom-style: groove;
 }

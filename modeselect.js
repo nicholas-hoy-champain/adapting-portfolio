@@ -51,20 +51,23 @@ const createProjectRow = (proj) => {
     const icon = document.createElement('img');
     icon.setAttribute('src', 'images/' + proj.iconPath);
     icon.setAttribute('alt', proj.title);
-    icon.style.height = 100;
-    icon.style.width = 100;
+    icon.style.height = '100px';
+    icon.style.width = '100px';
     row.append(icon);
 
     const title = document.createElement('p');
     title.innerHTML = '<b>' + proj.title + '</>'
+    title.style.alignSelf = 'center';
     row.append(title);
 
     const role = document.createElement('p');
     role.innerText = getFromMode(proj.role);
+    role.style.alignSelf = 'center';
     row.append(role);
 
     const timeframe = document.createElement('p');
     timeframe.innerText = getFromMode(proj.timeframe);
+    timeframe.style.alignSelf = 'center';
     row.append(timeframe);
 
     return row;
