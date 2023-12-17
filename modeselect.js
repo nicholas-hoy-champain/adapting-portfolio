@@ -45,29 +45,27 @@ const getSortedProjects = async () => {
             modeKey = "software";
     console.log(modeKey, currentMode);
 
-
     var projs = [];
+
+    //Section To Update
     projs.push(await getProject('addagrams'));
     projs.push(await getProject('artemis'));
     projs.push(await getProject('bwr'));
+    projs.push(await getProject('high-tide'));
+    projs.push(await getProject('lenora-fedora'));
+    projs.push(await getProject('private-dick'));
+    projs.push(await getProject('project-nautilus'));
     projs.push(await getProject('the-well'));
     projs.push(await getProject('willard-and-maple'));
 
-    projs.forEach((proj) => console.log(proj.modePriorities.hasOwnProperty(modeKey)));
-
     projs = projs.filter((proj) => proj.modePriorities.hasOwnProperty(modeKey));
-    projs = projs.sort((a,b) => a.modePriorities[modeKey] - b.modePriorities[modeKey]);
-
-    console.log(projs.length);
-
+    projs = projs.sort((a,b) => a.modePriorities[modeKey] - b.modePriorities[modeKey]);    
     return projs;
 }
 
 const getProject = async (name) => {
     const response = await fetch('./projects/' + name + '.json');
-    const asdasda = await response.json();
-    console.log(asdasda);
-    return asdasda;
+    return await response.json();
 }
 
 const onClickButton = (event) => {

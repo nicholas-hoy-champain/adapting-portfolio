@@ -1,0 +1,10 @@
+{
+    "modePriorities": {
+        "gamedev": 1
+    },
+
+    "iconPath" : "private-dick.jpg",
+    "title" : "Private Dick",
+    "role" : "Programmer (Freelance)",
+    "timeframe" : "October 2023–Present"
+}

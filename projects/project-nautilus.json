@@ -1,0 +1,11 @@
+{
+    "modePriorities": {
+        "software": 2,
+        "gamedev": 3
+    },
+
+    "iconPath" : "proj-n.png",
+    "title" : "Project Nautilus",
+    "role" : "Technical & Narrative Director",
+    "timeframe" : "August 2021–May 2022"
+}
