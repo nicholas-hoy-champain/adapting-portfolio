@@ -35,9 +35,15 @@ body {
 
 .projectsboard {
     display: contents;
+    width: 100vw;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-.projectsrow {
+.projectrow {
+    width: 100vw;
+    margin-left: 100px;
+    margin-right: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
