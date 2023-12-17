@@ -55,8 +55,8 @@ const getSortedProjects = async () => {
 
     projs.forEach((proj) => console.log(proj.modePriorities.hasOwnProperty(modeKey)));
 
-    projs.filter((proj) => proj.modePriorities.hasOwnProperty(modeKey));
-    projs.sort((a,b) => b.modePriorities[modeKey] - a.modePriorities[modeKey]);
+    projs = projs.filter((proj) => proj.modePriorities.hasOwnProperty(modeKey));
+    projs = projs.sort((a,b) => a.modePriorities[modeKey] - b.modePriorities[modeKey]);
 
     console.log(projs.length);
 
