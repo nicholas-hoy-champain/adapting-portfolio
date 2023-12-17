@@ -28,7 +28,7 @@ body {
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 35px;
     color: #DEFCB9;
     width: 495px;
 }
@@ -49,7 +49,7 @@ body {
     border: #629463;
     color: #DEFCB9;
     padding: 10px;
-    font-size: 35px;
+    font-size: 25px;
     gap: 10px;
     border-top-style: groove;
     border-bottom-style: groove;
