@@ -1,0 +1,10 @@
+{
+    "modePriorities": {
+        "editing": 5
+    },
+
+    "iconPath" : "artemis-thumbnail.png",
+    "title" : "Pegasus",
+    "role" : "Editor",
+    "timeframe" : "Oct 2015–June 2018"
+}

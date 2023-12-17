@@ -130,7 +130,7 @@ const onClickButton = (event) => {
 
 const onResizeSelector = (event) => {
     const headshot = modeselect.querySelector('img');
-    if(currentMode == Mode.Invalid && window.innerWidth >= headshot.width * 3 + 60) {
+    if(currentMode == Mode.Invalid && window.innerWidth > headshot.width * 3 + 75) {
         headshot.style.marginBottom = '90px';
     }
     else {
@@ -150,6 +150,10 @@ const onStart = () => {
     if(params.has('selection'))
     {
         buttons[params.get('selection')].click();
+    }
+    else
+    {
+        onResizeSelector();
     }
 }
 
