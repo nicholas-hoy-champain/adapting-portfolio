@@ -37,30 +37,21 @@ const UnravelMode = async () => {
 const getSortedProjects = async () => {
     
     var modeKey;
-    switch(currentMode)
-    {
-        case Mode.Game:
+    if(currentMode == Mode.Game)
             modeKey = "gamedev";
-            break;
-        case Mode.Editor:
+    if(currentMode ==  Mode.Editor)
             modeKey = "editing";
-            break;
-        case Mode.Software:
-        default:
+    if(currentMode == Mode.Software)
             modeKey = "software";
-            break;
-    }
+    console.log(modeKey, currentMode);
+
 
     var projs = [];
-
     projs.push(await getProject('addagrams'));
     projs.push(await getProject('artemis'));
     projs.push(await getProject('bwr'));
     projs.push(await getProject('the-well'));
     projs.push(await getProject('willard-and-maple'));
-
-    console.log(projs.length);
-    console.log(modeKey);
 
     projs.filter((proj) => modeKey in proj.modePriorities);
     projs.sort((a,b) => b.modePriorities[modeKey] - a.modePriorities[modeKey]);
@@ -73,7 +64,6 @@ const getSortedProjects = async () => {
 const getProject = async (name) => {
     const response = await fetch('./projects/' + name + '.json');
     const asdasda = await response.json();
-    console.log(asdasda.toString());
     console.log(asdasda);
     return asdasda;
 }
