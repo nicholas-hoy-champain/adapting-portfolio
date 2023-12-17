@@ -27,8 +27,9 @@ body {
     background-color: #629463;
     border: none;
     padding: 10px;
-    font-weight: 100; /*Check with Nat why this isn't working */
-    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
     color: #DEFCB9;
     width: 495px;
 }
