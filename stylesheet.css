@@ -36,6 +36,7 @@ body {
     width: 100vw;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 100px;
 }
 
 .projectrow {
@@ -50,5 +51,4 @@ body {
     font-size: 25px;
     gap: 10px;
     border-top-style: groove;
-    border-bottom-style: groove;
 }
