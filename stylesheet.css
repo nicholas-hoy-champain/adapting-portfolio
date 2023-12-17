@@ -40,7 +40,9 @@ body {
 .projectsrow {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: left;
+    align-items: left;
     border: #629463;
     color: #DEFCB9;
     padding: 10px;
