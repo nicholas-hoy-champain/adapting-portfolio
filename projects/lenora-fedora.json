@@ -6,6 +6,9 @@
 
     "iconPath" : "jun6mc.png",
     "title" : "Lenora Fedora",
-    "role" : "AI Programmer",
+    "role" : {
+        "software":"Behavioral Programmer",
+        "gamedev":"AI Programmer"
+    },
     "timeframe" : "January 2021–May 2021"
 }
