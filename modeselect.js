@@ -9,7 +9,7 @@ var currentMode = Mode.Invalid;
 
 const modeselect = document.querySelector('.modeselect');
 
-const UnravelMode = () => {
+const UnravelMode = async () => {
     /*Text at top*/
     const intro = document.createElement('div');
     intro.style.display = 'content';
@@ -30,10 +30,47 @@ const UnravelMode = () => {
 
 
     /*Project files*/
+    const projList = await getSortedProjects();
+
     fetch('./projects/addagrams.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
 
+}
+
+const getSortedProjects = async () => {
+    
+    var modeKey;
+    switch(currentMode)
+    {
+        case Mode.Game:
+            modeKey = "gamedev";
+            break;
+        case Mode.Editor:
+            modeKey = "editing";
+            break;
+        case Mode.Software:
+        default:
+            modeKey = "software";
+            break;
+    }
+
+    var projs = [];
+
+    projs.push(getProject('addagrams'));
+    projs.push(getProject('artemis'));
+    projs.push(getProject('bwr'));
+    projs.push(getProject('the-well'));
+    projs.push(getProject('willard-and-maple'));
+
+    console.log(projs.length);
+
+    return projs;
+}
+
+const getProject = async (name) => {
+    const response = await fetch('./projects/' + name + '.json');
+    return await response.json();
 }
 
 const onClickButton = (event) => {

@@ -1,7 +1,7 @@
 {
     "modePriorities": {
         "software": 1,
-        "game-dev": 2
+        "gamedev": 2
     },
 
     "iconPath" : "addagrams.jpg",

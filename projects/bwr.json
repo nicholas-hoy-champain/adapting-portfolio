@@ -1,6 +1,6 @@
 {
     "modePriorities": {
-        "game-dev": 5
+        "gamedev": 5
     },
 
     "iconPath" : "bwr-thumbnail.png",
