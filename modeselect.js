@@ -61,17 +61,14 @@ const createProjectRow = (proj) => {
     const title = document.createElement('p');
     title.innerText = proj.title;
     title.style.fontWeight = '700';
-    title.style.alignContent = 'center';
     row.append(title);
 
     const role = document.createElement('p');
     role.innerText = getFromMode(proj.role);
-    role.style.alignContent = 'center';
     row.append(role);
 
     const timeframe = document.createElement('p');
     timeframe.innerText = getFromMode(proj.timeframe);
-    timeframe.style.alignContent = 'center';
     row.append(timeframe);
 
     return row;
