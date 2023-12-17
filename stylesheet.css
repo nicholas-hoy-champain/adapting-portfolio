@@ -3,7 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color:#c9c9c9;
-    color:#ececec;
+    color: #9a9a9a;
+;
 }
 
 .modeselect {
@@ -47,7 +48,7 @@ body {
     justify-content: left;
     align-items: left;
     border: #929292;
-    color: #ececec;
+    color: #9a9a9a;
     padding: 10px;
     font-size: 25px;
     gap: 10px;
