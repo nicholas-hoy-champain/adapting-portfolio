@@ -12,6 +12,8 @@ const modeselect = document.querySelector('.modeselect');
 
 const UnravelMode = async () => {
     /*Text at top*/
+    onResizeSelector();
+
     const headshot = document.createElement('div');
     headshot.style.display = 'flex';
     headshot.style.gap = '20px';
