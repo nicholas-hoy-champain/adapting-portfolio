@@ -13,7 +13,6 @@ body {
 }
 
 .modeholder {
-    
     display: flex;
     flex-wrap: wrap;
     flex-direction: unset;
@@ -32,4 +31,19 @@ body {
     font-size: 35px;
     color: #DEFCB9;
     width: 495px;
+}
+
+.projectsboard {
+    display: contents;
+}
+
+.projectsrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: #629463;
+    color: #DEFCB9;
+    padding: 10px;
+    font-size: 35px;
+    margin-bottom: 10px;
 }

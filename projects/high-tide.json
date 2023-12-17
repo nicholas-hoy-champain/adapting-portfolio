@@ -1,0 +1,10 @@
+{
+    "modePriorities": {
+        "gamedev": 6
+    },
+
+    "iconPath" : "high-tide.png",
+    "title" : "High Tide",
+    "role" : "Product Owner & Programmer",
+    "timeframe" : "May 2021–July 2021"
+}

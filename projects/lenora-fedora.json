@@ -1,0 +1,11 @@
+{
+    "modePriorities": {
+        "software": 3,
+        "gamedev": 4
+    },
+
+    "iconPath" : "jun6mc.png",
+    "title" : "Lenora Fedora",
+    "role" : "AI Programmer",
+    "timeframe" : "January 2021–May 2021"
+}

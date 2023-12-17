@@ -11,6 +11,10 @@ const modeselect = document.querySelector('.modeselect');
 
 const UnravelMode = async () => {
     /*Text at top*/
+    const headshot = document.createElement('div');
+    headshot.style.display = 'flex';
+    headshot.style.gap = '20px';
+
     const intro = document.createElement('div');
     intro.style.display = 'content';
     intro.style.width = '1000px';
@@ -24,14 +28,21 @@ const UnravelMode = async () => {
     selfpitch.innerText = 'I\'m a game programmer who excels in communication, technical research, and planning. I collaborate intentionally with my team to give players an experience that communicates a sense of care was put behind it. Focus on AI, systems, and gameplay programming. Well-versed in narrative structure, management, and writing.';
     intro.append(selfpitch);
 
-    modeselect.style.display = 'flex';
-    modeselect.style.gap = '20px';
-    modeselect.append(intro);
-
+    headshot.append(intro);
+    modeselect.append(headshot);
 
     /*Project files*/
     const projList = await getSortedProjects();
-    console.log(projList);
+
+    const board = document.createElement('div');
+    board.classList.add('projectsboard');
+    projList.forEach((proj) => {
+        const row = document.createElement('div');
+        row.classList.add('projectrow');
+        row.innerText = proj.title + " | " + proj.role + " | " + proj.timeframe;
+        board.append(row);
+    });
+    modeselect.append(board);
 }
 
 const getSortedProjects = async () => {
@@ -47,7 +58,7 @@ const getSortedProjects = async () => {
 
     var projs = [];
 
-    //Section To Update
+    /*Section to update*/
     projs.push(await getProject('addagrams'));
     projs.push(await getProject('artemis'));
     projs.push(await getProject('bwr'));
