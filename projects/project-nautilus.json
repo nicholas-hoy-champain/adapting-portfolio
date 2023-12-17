@@ -1,7 +1,8 @@
 {
     "modePriorities": {
         "software": 2,
-        "gamedev": 3
+        "gamedev": 3,
+        "editing": 1
     },
 
     "iconPath" : "proj-n.png",

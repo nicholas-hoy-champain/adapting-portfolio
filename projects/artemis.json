@@ -2,7 +2,7 @@
     "modePriorities": {
         "software": 0,
         "gamedev": 0,
-        "editing": 2
+        "editing": 4
     },
 
     "iconPath" : "artemis-thumbnail.png",
