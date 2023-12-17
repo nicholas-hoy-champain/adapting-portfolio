@@ -56,7 +56,7 @@ const createProjectRow = (proj) => {
     row.append(icon);
 
     const title = document.createElement('p');
-    title.innerText = '<b>' + proj.title + '</>'
+    title.innerHTML = '<b>' + proj.title + '</>'
     row.append(title);
 
     const role = document.createElement('p');
@@ -64,7 +64,7 @@ const createProjectRow = (proj) => {
     row.append(role);
 
     const timeframe = document.createElement('p');
-    role.innerText = getFromMode(proj.timeframe);
+    timeframe.innerText = getFromMode(proj.timeframe);
     row.append(timeframe);
 
     return row;
