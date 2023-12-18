@@ -48,7 +48,8 @@ body {
     align-items: left;
     border: #929292;
     color: #898989;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 25px;
     gap: 10px;
     border-top-style: groove;
