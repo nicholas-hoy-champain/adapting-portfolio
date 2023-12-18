@@ -100,6 +100,7 @@ const getSortedProjects = async () => {
     projs.push(await getProject('bwr'));
     projs.push(await getProject('high-tide'));
     projs.push(await getProject('lenora-fedora'));
+    projs.push(await getProject('pegasus'));
     projs.push(await getProject('private-dick'));
     projs.push(await getProject('project-nautilus'));
     projs.push(await getProject('the-well'));
