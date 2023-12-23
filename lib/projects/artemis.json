@@ -23,28 +23,5 @@
         "toolsUsed" : "Unity, C#, Git, Ink, Yarn Spinner"
     },
 
-    "actionHTML" : "<div><div id=\"929394437811801072\" align=\"center\" style=\"width: 100%; overflow-y: hidden;\" class=\"wcustomhtml\"><iframe id=\"ghcard-nicholas-hoy-champain-1\" frameborder=\"0\" scrolling=\"0\" allowtransparency=\"true\" src=\"//cdn.jsdelivr.net/github-cards/1.0.2/cards/default.html?user=nicholas-hoy-champain&amp;identity=ghcard-nicholas-hoy-champain-1&amp;repo=Artemis\" width=\"400\" height=\"152\" data-dashlane-frameid=\"1947767668755\"></iframe><script src=\"//cdn.jsdelivr.net/github-cards/latest/widget.js\"></script></div></div>",
-
-    "features" : {
-        "image" : "",
-        "points" : [
-
-        ]
-    },
-
-    "contributions" : {
-        "image" : "",
-        "points" : [
-
-        ]
-    },
-
-    "blog" : [
-        {
-
-        },
-        {
-
-        }
-    ]
+    "actionHTML" : "<div><div id=\"929394437811801072\" align=\"center\" style=\"width: 100%; overflow-y: hidden;\" class=\"wcustomhtml\"><iframe id=\"ghcard-nicholas-hoy-champain-1\" frameborder=\"0\" scrolling=\"0\" allowtransparency=\"true\" src=\"//cdn.jsdelivr.net/github-cards/1.0.2/cards/default.html?user=nicholas-hoy-champain&amp;identity=ghcard-nicholas-hoy-champain-1&amp;repo=Artemis\" width=\"400\" height=\"152\" data-dashlane-frameid=\"1947767668755\"></iframe><script src=\"//cdn.jsdelivr.net/github-cards/latest/widget.js\"></script></div></div>"
 }
