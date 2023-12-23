@@ -58,5 +58,7 @@ const onStart = () => {
         .then(response => {projData = response; buildProjectPage();});
 }
 
+console.log('pre onStart');
+
 onStart();
 //window.addEventListener("resize", onResizeSelector);
