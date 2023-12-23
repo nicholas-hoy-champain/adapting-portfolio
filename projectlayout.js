@@ -53,7 +53,7 @@ const onStart = () => {
     console.log('preJSON ' + currentMode);
 
 
-    fetch('.lib/projects/' + projFileName + '.json')
+    fetch('lib/projects/' + projFileName + '.json')
         .then(response => response.json())
         .then(response => {projData = response; buildProjectPage();});
 }

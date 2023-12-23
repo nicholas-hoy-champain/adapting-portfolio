@@ -112,7 +112,7 @@ const getSortedProjects = async () => {
 }
 
 const getProject = async (name) => {
-    const response = await fetch('.lib/projects/' + name + '.json');
+    const response = await fetch('lib/projects/' + name + '.json');
     return await response.json();
 }
 
