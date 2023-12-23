@@ -24,11 +24,11 @@ const buildTitleCard = () => {
     titleCard.alt = projData.pageTitle.bannerAlt;
     
     const titleImage = document.createElement('img');
-    titleCard.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.image;
-    titleCard.alt = projData.pageTitle.imageAlt;
+    titleImage.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.image;
+    titleImage.alt = projData.pageTitle.imageAlt;
     titleCard.append(titleImage);
 
-    const titleText = document.createElement('p');
+    const titleText = document.createElement('h1');
     titleText.innerHTML = projData.pageTitle.text;
     titleCard.append(titleText);
 
