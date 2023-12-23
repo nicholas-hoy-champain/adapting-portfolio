@@ -12,7 +12,9 @@
 
     "pageTitle" : {
         "image" : "artemis-title_orig.png",
+        "imageAlt" : "Artemis.",
         "banner" : "940527193.jpg",
+        "bannerAlt" : "Backdrop of green cresent moon, the icon for the Goddess singleton in Artemis.",
         "text" : "An Ongoing Narrative Programming Project"
     },
 

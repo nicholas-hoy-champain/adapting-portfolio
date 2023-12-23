@@ -14,7 +14,25 @@ var projFileName = 'artemis';
 var projData;
 
 const buildTitleCard = () => {
+    projData.pageTitle.image;
+    projData.pageTitle.banner;
+    projData.pageTitle.text;
+
+    const titleCard = document.createElement('img');
+    titleCard.classList.add('projtitlecard');
+    titleCard.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.banner;
+    titleCard.alt = projData.pageTitle.bannerAlt;
     
+    const titleImage = document.createElement('img');
+    titleCard.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.image;
+    titleCard.alt = projData.pageTitle.imageAlt;
+    titleCard.append(titleImage);
+
+    const titleText = document.createElement('p');
+    titleText.innerHTML = projData.pageTitle.text;
+    titleCard.append(titleText);
+
+    proj.append(titleCard);
 }
 
 const buildTopLevelInfo = () => {

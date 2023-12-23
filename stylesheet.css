@@ -54,3 +54,9 @@ body {
     gap: 10px;
     border-top-style: groove;
 }
+
+.projtitlecard {
+    width: 100vw;
+    height: fit-content;
+    padding: 100px;
+}
