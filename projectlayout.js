@@ -34,7 +34,7 @@ const buildTitleCard = () => {
 
     const titleText = document.createElement('h1');
     titleText.innerHTML = projData.pageTitle.text;
-    titleImage.style.textAlign = 'center';
+    titleText.style.textAlign = 'center';
     titleCard.append(titleText);
 
     proj.append(titleCard);
