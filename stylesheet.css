@@ -58,5 +58,7 @@ body {
 .projtitlecard {
     width: 100vw;
     height: fit-content;
-    padding: 100px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

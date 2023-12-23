@@ -18,10 +18,10 @@ const buildTitleCard = () => {
     projData.pageTitle.banner;
     projData.pageTitle.text;
 
-    const titleCard = document.createElement('img');
+    const titleCard = document.createElement('div');
     titleCard.classList.add('projtitlecard');
-    titleCard.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.banner;
-    titleCard.alt = projData.pageTitle.bannerAlt;
+    titleCard.style.backgroundImage = 'url(\'lib/images/' + projFileName + '/' + projData.pageTitle.banner + '\')';
+    //titleCard.style.background = projData.pageTitle.bannerAlt;
     
     const titleImage = document.createElement('img');
     titleImage.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.image;
@@ -68,7 +68,7 @@ const onStart = () => {
     else{
         currentMode = Math.floor(Math.random() * 3);
     }
-    console.log('preJSON ' + currentMode);
+    console.log('preJSON - ' + currentMode);
 
 
     fetch('lib/projects/' + projFileName + '.json')
