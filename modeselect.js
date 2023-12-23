@@ -53,7 +53,7 @@ const createProjectRow = (proj) => {
     row.classList.add('projectrow');
 
     const icon = document.createElement('img');
-    icon.setAttribute('src', 'images/' + proj.iconPath);
+    icon.setAttribute('src', 'lib/images/' + proj.iconPath);
     icon.setAttribute('alt', proj.title);
     icon.style.height = '100px';
     icon.style.width = '100px';
@@ -112,7 +112,7 @@ const getSortedProjects = async () => {
 }
 
 const getProject = async (name) => {
-    const response = await fetch('./projects/' + name + '.json');
+    const response = await fetch('.lib/projects/' + name + '.json');
     return await response.json();
 }
 
