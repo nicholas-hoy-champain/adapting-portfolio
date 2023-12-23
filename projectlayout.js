@@ -26,10 +26,15 @@ const buildTitleCard = () => {
     const titleImage = document.createElement('img');
     titleImage.src = 'lib/images/' + projFileName + '/' + projData.pageTitle.image;
     titleImage.alt = projData.pageTitle.imageAlt;
+    titleImage.style.width = '100vw';
+    titleImage.style.display = 'block';
+    titleImage.style.marginLeft = 'auto';
+    titleImage.style.marginRight = 'auto';
     titleCard.append(titleImage);
 
     const titleText = document.createElement('h1');
     titleText.innerHTML = projData.pageTitle.text;
+    titleImage.style.textAlign = 'center';
     titleCard.append(titleText);
 
     proj.append(titleCard);
