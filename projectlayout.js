@@ -50,7 +50,7 @@ const onStart = () => {
     else{
         currentMode = Math.floor(Math.random() * 3);
     }
-    console.log('preJSON' + currentMode);
+    console.log('preJSON ' + currentMode);
 
 
     fetch('.lib/projects/' + projFileName + '.json')
