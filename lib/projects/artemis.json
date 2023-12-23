@@ -8,20 +8,5 @@
     "iconPath" : "artemis-thumbnail.png",
     "title" : "Artemis",
     "role" : "Creator",
-    "timeframe" : "May 2022–Present",
-
-    "pageTitle" : {
-        "image" : "artemis-title_orig.png",
-        "banner" : "940527193.jpg",
-        "text" : "An Ongoing Narrative Programming Project"
-    },
-
-    "topLevel" : {
-        "summary" : "<i>Artemis</i> is an ongoing narrative programming project by myself. For games where the order of who you talk to or what you do is variable, <i>Artemis</i> accesses rules and world state data to give the most appropriate and important delivery. It’s not about the means of delivery, like <i>Ink</i> or <i>Yarn Spinner</i>, but instead about deciding what should be delivered to ensure the narrative beats feel reactive, appropriate, and timely.",
-        "scale" : "Unity Package",
-        "teamSize" : "1",
-        "toolsUsed" : "Unity, C#, Git, Ink, Yarn Spinner"
-    },
-
-    "actionHTML" : "<div><div id=\"929394437811801072\" align=\"center\" style=\"width: 100%; overflow-y: hidden;\" class=\"wcustomhtml\"><iframe id=\"ghcard-nicholas-hoy-champain-1\" frameborder=\"0\" scrolling=\"0\" allowtransparency=\"true\" src=\"//cdn.jsdelivr.net/github-cards/1.0.2/cards/default.html?user=nicholas-hoy-champain&amp;identity=ghcard-nicholas-hoy-champain-1&amp;repo=Artemis\" width=\"400\" height=\"152\" data-dashlane-frameid=\"1947767668755\"></iframe><script src=\"//cdn.jsdelivr.net/github-cards/latest/widget.js\"></script></div></div>"
+    "timeframe" : "May 2022–Present"
 }

@@ -7,10 +7,5 @@
     "iconPath" : "add-icon.png",
     "title" : "Addagrams",
     "role" : "Programmer (Freelance)",
-    "timeframe" : "March 2023–August 2023",
-
-    "banner" : "addagrams-banner",
-    "blogitems" : [{
-        "type":"introduction"
-    }]
+    "timeframe" : "March 2023–August 2023"
 }
