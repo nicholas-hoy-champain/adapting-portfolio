@@ -51,7 +51,7 @@ const buildTopLevelInfo = () => {
     container.classList.add('projtoplevel');
 
     const summary = document.createElement('p');
-    summary.innerHTML = projData.topLevel.summary;
+    summary.innerHTML = getFromMode(projData.topLevel.summary);
     container.append(summary);
 
     const stats = document.createElement('p');
@@ -117,15 +117,11 @@ const onStart = () => {
     else{
         currentMode = Math.floor(Math.random() * 3);
     }
-    console.log('preJSON - ' + currentMode);
-
 
     fetch('lib/projects/' + projFileName + '.json')
         .then(response => response.json())
         .then(response => {projData = response; buildProjectPage();});
 }
-
-console.log('pre onStart');
 
 onStart();
 //window.addEventListener("resize", onResizeSelector);
