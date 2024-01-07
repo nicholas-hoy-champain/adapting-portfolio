@@ -54,7 +54,7 @@ const buildTopLevelInfo = () => {
     summary.innerHTML = getFromMode(projData.topLevel.summary);
     container.append(summary);
 
-    const stats = document.createElement('p');
+    const stats = document.createElement('div');
     stats.style.display = 'content';
 
     const role = document.createElement('p');
@@ -66,7 +66,6 @@ const buildTopLevelInfo = () => {
     teamSize.innerText = 'Team Size: ' + getFromMode(projData.topLevel.teamSize);
     stats.append(teamSize);
 
-    
     const scale = document.createElement('p');
     scale.innerText = 'Scale: ' + getFromMode(projData.topLevel.scale);
     stats.append(scale);
@@ -76,7 +75,7 @@ const buildTopLevelInfo = () => {
     stats.append(timeframe);
     
     const toolsUsed = document.createElement('p');
-    toolsUsed.innerText = 'Tools Used: ' + getFromMode(projData.topLevel.toolsUsed);
+    toolsUsed.innerHTML = 'Tools Used: ' + getFromMode(projData.topLevel.toolsUsed);
     stats.append(toolsUsed);
 
     container.append(stats);
