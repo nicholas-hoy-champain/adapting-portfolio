@@ -71,6 +71,6 @@ body {
     padding: 50px;
     gap: 50px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
 }
