@@ -33,7 +33,11 @@ const UnravelMode = async () => {
     selfpitch.innerText = 'I\'m a game programmer who excels in communication, technical research, and planning. I collaborate intentionally with my team to give players an experience that communicates a sense of care was put behind it. Focus on AI, systems, and gameplay programming. Well-versed in narrative structure, management, and writing.';
     intro.append(selfpitch);
 
-    headshot.append(modeselect.querySelector('img'));
+    imgQueried = modeselect.querySelector('img')
+    imgQueried.style.marginRight = '0px';
+    imgQueried.style.marginLeft = '0px';
+
+    headshot.append(imgQueried);
     headshot.append(intro);
     modeselect.append(headshot);
 

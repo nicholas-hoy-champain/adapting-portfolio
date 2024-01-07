@@ -65,3 +65,9 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.projtoplevel {
+    width: 100vw;
+    padding: 50px;
+    gap: 50px;
+}
