@@ -13,6 +13,17 @@ const proj = document.querySelector('.projblog');
 var projFileName = 'artemis';
 var projData;
 
+const getFromMode = (value) => {
+    if(typeof value === 'object')
+    {
+        return getFromMode(value[ModeKey[currentMode]]);
+    }
+    else
+    {
+        return value;
+    }
+}
+
 const buildTitleCard = () => {
     const titleCard = document.createElement('div');
     titleCard.classList.add('projtitlecard');
@@ -36,11 +47,49 @@ const buildTitleCard = () => {
 }
 
 const buildTopLevelInfo = () => {
+    const container = document.createElement('div');
+    container.classList.add('projtoplevel');
+
+    const summary = document.createElement('p');
+    summary.innerHTML = projData.topLevel.summary;
+    container.append(summary);
+
+    const stats = document.createElement('p');
+    stats.style.display = 'content';
+
+    const role = document.createElement('p');
+    role.innerText = getFromMode(projData.role);
+    role.style.fontStyle = 'italic';
+    stats.append(role);
     
+    const teamSize = document.createElement('p');
+    teamSize.innerText = 'Team Size: ' + getFromMode(projData.topLevel.teamSize);
+    stats.append(teamSize);
+
+    
+    const scale = document.createElement('p');
+    role.innerText = 'Scale: ' + getFromMode(projData.topLevel.scale);
+    stats.append(scale);
+
+    const timeframe = document.createElement('p');
+    timeframe.innerText = getFromMode(projData.timeframe);
+    stats.append(role);
+    
+    const toolsUsed = document.createElement('p');
+    role.innerText = 'Tools Used: ' + getFromMode(projData.topLevel.toolsUsed);
+    stats.append(toolsUsed);
+
+    container.append(stats);
+    
+    proj.append(container);
+
+    const action = document.createElement('div');
+    action.innerHTML = projData.actionHTML;
+    proj.append(action);
 }
 
 const buildBlog = () => {
-
+    
 }
 
 const buildProjectPage = () => {
