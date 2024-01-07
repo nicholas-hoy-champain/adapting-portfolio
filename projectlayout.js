@@ -72,7 +72,7 @@ const buildTopLevelInfo = () => {
     stats.append(scale);
 
     const timeframe = document.createElement('p');
-    timeframe.innerText = getFromMode(projData.timeframe);
+    timeframe.innerText = 'Development Period: ' + getFromMode(projData.timeframe);
     stats.append(timeframe);
     
     const toolsUsed = document.createElement('p');
