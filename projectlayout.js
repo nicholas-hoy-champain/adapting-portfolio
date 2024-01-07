@@ -68,15 +68,15 @@ const buildTopLevelInfo = () => {
 
     
     const scale = document.createElement('p');
-    role.innerText = 'Scale: ' + getFromMode(projData.topLevel.scale);
+    scale.innerText = 'Scale: ' + getFromMode(projData.topLevel.scale);
     stats.append(scale);
 
     const timeframe = document.createElement('p');
     timeframe.innerText = getFromMode(projData.timeframe);
-    stats.append(role);
+    stats.append(timeframe);
     
     const toolsUsed = document.createElement('p');
-    role.innerText = 'Tools Used: ' + getFromMode(projData.topLevel.toolsUsed);
+    toolsUsed.innerText = 'Tools Used: ' + getFromMode(projData.topLevel.toolsUsed);
     stats.append(toolsUsed);
 
     container.append(stats);
